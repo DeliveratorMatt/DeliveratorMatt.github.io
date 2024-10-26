@@ -1,0 +1,30 @@
+<div class="title-icon">
+  <div class="title">
+    <h1>
+      <a href="{{ site.baseurl }}">
+        {{ site.title }}
+      </a>
+    </h1>
+  </div>
+  <div class="icon">
+    <a href="{{ site.baseurl }}">
+      <img src="{{ site.baseurl }}{{ site.icon }}" alt="{{ site.icon_alt }}">
+    </a>
+  </div>
+</div>
+
+<div class="nav">
+  <nav>
+    <div class="small-navbar">
+      {% include navigation.html %}
+    </div>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="large-navbar">
+      {% include navigation.html %}
+    </div>
+  </nav>
+</div>

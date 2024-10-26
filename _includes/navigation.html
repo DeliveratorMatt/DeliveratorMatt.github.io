@@ -1,0 +1,14 @@
+{%for item in site.data.navigation %}
+  <div class="nav-item">
+    <a href="{{ item.link }}" class="nav-link" {% if page.url == item.link %}class="current" aria-current="page"{% endif %}>
+      {{ item.name }}
+    </a>
+  </div>
+{% endfor %}
+{% if site.blog %}
+  <div class="nav-item">
+    <a href="/blog" class="nav-link" {% if page.url == /blog or page.url == /blog/ %}class="current" aria-current="page"{% endif %}>
+      Blog
+    </a>
+  </div>
+{% endif %}
